@@ -18,26 +18,28 @@
 <body>
     <header>
         <!-- El anuncio que dice que estas invitado/a a: "Mi cumple", "Mi Fiesta", "La kermes", "Mi Spa Cumple", etc -->
-        <h1>¡estás invitado/a a la:</h1>
-        <h2>kermés</h2>
-        <hr>
+        <div class="anuncio">
+
+            <!-- <p>¡estás invitado/a a la:</p>
+            <span>kermés</span>
+            <hr> -->
+        </div>
+        <!-- Informacion del cumpleañero/a -->
+        <section class="info-cumple">
+            <!--
+             Cumpleaños número
+             8
+             +de+
+             ISI
+             banner
+            -->
+            <p>cumpleaños número</p>
+            <p class="number">8</p>
+            <p>de <span class="user-name">isi ruiz</span></p>
+
+        </section>
     </header>
 
-    <!-- Informacion del cumpleañero/a -->
-    <section class="info-cumple">
-        <!--
-         Cumpleaños número
-         8
-         +de+
-         ISI
-         banner
-        -->
-        <h1>cumpleaños número</h1>
-        <span class="number">8</span>
-        <h2>de</h2>
-        <p class="user-name">isi ruiz</p>
-
-    </section>
     <div class="spacer"></div>
     <!-- Aquí va la información del horario, fecha y dirección del lugar -->
     <section class="info-event">
@@ -61,7 +63,6 @@
             <i class="bi bi-geo-alt"></i>
             <span>club roma</span>
         </div>
-
     </section>
 
     <nav>
@@ -72,9 +73,11 @@
     </nav>
 
     <!-- Bootstrap Script -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmxc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
     <!-- Confetti Script -->
     <script src="js/confetti.js"></script>
 </body>
