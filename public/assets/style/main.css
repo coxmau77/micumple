@@ -1,0 +1,12 @@
+:root {
+    --main-clr: orange;
+    --bg-clr-temp: whitesmoke;
+}
+
+html {
+    background-color: var(--bg-clr-temp);
+}
+
+body {
+    background-color: transparent;
+}
