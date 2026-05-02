@@ -112,8 +112,28 @@ nav {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: end;
     padding: 1.5rem 0;
     z-index: 1000;
+}
+
+nav>.btn-trigger {
+    background-color: var(--main-clr);
+    width: 50px;
+    height: 50px;
+    font-size: x-large;
+    border: 2px solid var(--light-clr);
+    border-radius: 100vw;
+    color: var(--light-clr);
+}
+
+#send {
+    width: 70px;
+    height: 70px;
+}
+
+.btn-trigger:active {
+    background-color: var(--light-clr);
 }
 
 /* Dialog Animation Styles */
@@ -166,4 +186,10 @@ nav {
 .offcanvas {
     color: var(--light-clr);
     background-color: var(--main-clr);
+}
+
+.offcanvas-body {
+    /* display: flex;
+    justify-items: center;
+    align-items: center; */
 }
