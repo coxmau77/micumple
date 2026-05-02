@@ -71,8 +71,63 @@
 
         <button id="send" class="btn-trigger"><i class="bi bi-gift-fill"></i></button>
 
-        <button id="share" class="btn-trigger"><i class="bi bi-share-fill"></i></button>
+        <button id="share" class="btn-trigger" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+            <i class="bi bi-share-fill"></i>
+        </button>
     </nav>
+
+
+    <!-- Dialog QR -->
+    <dialog id="qr-dialog" class="rounded border-0 shadow-lg p-3" style="max-width: 90vw;">
+        <div class="d-flex justify-content-end mb-2">
+            <button id="close-qr-dialog" class="btn btn-outline-secondary border-0 fs-5 lh-1 p-1"><i
+                    class="bi bi-x-lg"></i></button>
+        </div>
+        <img src="img/qr_isabella_2026.png" alt="Código QR" class="img-fluid rounded mx-auto d-block">
+    </dialog>
+
+    <!-- Dialog Send -->
+    <dialog id="send-dialog" class="rounded border-0 shadow-lg p-3" style="max-width: 90vw; min-width: 300px;">
+        <div class="d-flex justify-content-end mb-2">
+            <button id="close-send-dialog" class="btn btn-outline-secondary border-0 fs-5 lh-1 p-1"><i
+                    class="bi bi-x-lg"></i></button>
+        </div>
+        <section class="text-dark">
+            <h5 class="mb-3 text-center">Datos para regalo</h5>
+
+            <div class="mb-3 p-2 border rounded d-flex justify-content-between align-items-center">
+                <div>
+                    <small class="d-block text-muted text-start lh-1 mb-1">CVU</small>
+                    <span id="cvu-text" class="fw-bold fs-6">0000003100012345678901</span>
+                </div>
+                <button class="btn btn-sm btn-outline-primary copy-btn" data-target="cvu-text">
+                    <i class="bi bi-copy"></i>
+                </button>
+            </div>
+
+            <div class="p-2 border rounded d-flex justify-content-between align-items-center">
+                <div>
+                    <small class="d-block text-muted text-start lh-1 mb-1">ALIAS</small>
+                    <span id="alias-text" class="fw-bold fs-6">ISABELLA.CUMPLE.2026</span>
+                </div>
+                <button class="btn btn-sm btn-outline-primary copy-btn" data-target="alias-text">
+                    <i class="bi bi-copy"></i>
+                </button>
+            </div>
+        </section>
+    </dialog>
+
+    <!-- Offcanvas Share -->
+    <div class="offcanvas offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasBottomLabel">Compartir:</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body small">
+            <i id="share-wa" class="bi bi-whatsapp"></i>
+        </div>
+    </div>
 
     <!-- Bootstrap Script -->
 
@@ -82,6 +137,8 @@
 
     <!-- Confetti Script -->
     <script src="js/confetti.js"></script>
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
